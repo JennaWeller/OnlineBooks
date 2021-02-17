@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IQueryable<Book>
+<header>
+
+    <h1 class="text-center"> Welcome to the Online Book Site </h1>
+    <img src="~/lib/bootstrap/img/books.jpg" height="500" width="1100" />
+</header>
+<!--loop through the info from the model and output it to the ptags-->
+@foreach (var x in Model)
+{
+    <div>
+        <h3> Title:  @x.Title</h3>
+        <p> Author: @x.Author</p>
+        <p> Publisher: @x.Publisher</p>
+        <p>ISBN: @x.ISBN</p>
+        <p> Classification_Category: @x.Classification_Category</p>
+        <p> Price:$@x.Price</p>
+    </div>
+}
