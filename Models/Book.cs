@@ -19,11 +19,14 @@ namespace OnlineBooks.Models
         public string Publisher { get; set; }
         //ISBN validation
         [Required]
-        [RegularExpression("^([0-9]{3}-[0-9]{10})")]
+        [RegularExpression("(^[0-9]{3}-[0-9]{10}$)", ErrorMessage = "Please input a valid ISBN number like ###-##########")]
         public string ISBN { get; set; }
         [Required]
-        public string Classification_Category { get; set; }
+        public string Classification { get; set; }
         [Required]
+        public string Category { get; set; }
+        [Required]
+        [DataType(DataType.Currency, ErrorMessage = "Monetary values only")]
         public double Price { get; set; }
     }
 }
