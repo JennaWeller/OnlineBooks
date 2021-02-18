@@ -14,7 +14,10 @@ namespace OnlineBooks.Models
         [Required]
         public string Title { get; set; }
         [Required]
-        public string Author { get; set; }
+        public string AuthorFirstName { get; set; }
+
+        [Required]
+        public string AuthorLastName { get; set; }
         [Required]
         public string Publisher { get; set; }
         //ISBN validation
