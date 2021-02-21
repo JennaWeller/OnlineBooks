@@ -28,6 +28,7 @@ namespace OnlineBooks.Models
         public string Classification { get; set; }
         [Required]
         public string Category { get; set; }
+        //only accept currency for price 
         [Required]
         [DataType(DataType.Currency, ErrorMessage = "Monetary values only")]
         public double Price { get; set; }

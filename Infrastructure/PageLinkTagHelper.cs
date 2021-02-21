@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 
 namespace OnlineBooks.Infrastructure
-{
+{   //making our own tag helper
     [HtmlTargetElement("div", Attributes = "page-model")]
     public class PageLinkTagHelper : TagHelper
     {
@@ -34,6 +34,7 @@ namespace OnlineBooks.Infrastructure
         {
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
             TagBuilder result = new TagBuilder("div");
+            //more pagination with for loop 
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder tag = new TagBuilder("a");
