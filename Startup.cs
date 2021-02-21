@@ -57,8 +57,10 @@ namespace OnlineBooks
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    "pagination",
+                    "P{page}",
+                    new { Controller = "Home", action = "Index" });
+                endpoints.MapDefaultControllerRoute();
             });
             //seeding the database/populating it with the seeddata stuff
             SeedData.EnsurePopulated(app);

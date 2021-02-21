@@ -31,5 +31,6 @@ namespace OnlineBooks.Models
         [Required]
         [DataType(DataType.Currency, ErrorMessage = "Monetary values only")]
         public double Price { get; set; }
+        public int PageNumber { get; set; }
     }
 }

@@ -31,7 +31,8 @@ namespace OnlineBooks.Models
                         ISBN = "978-0451419439",
                         Classification = "Fiction",
                         Category = "Classic",
-                        Price = 9.95
+                        Price = 9.95,
+                        PageNumber = 1488
 
 
                     },
@@ -45,7 +46,8 @@ namespace OnlineBooks.Models
                         ISBN = "978-0743270755",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 14.58
+                        Price = 14.58,
+                        PageNumber = 944
                     },
                     new Book
                     {
@@ -57,8 +59,8 @@ namespace OnlineBooks.Models
                         ISBN = "978-0553384611",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 21.54
-
+                        Price = 21.54,
+                        PageNumber = 832
 
                     },
                     new Book
@@ -71,7 +73,8 @@ namespace OnlineBooks.Models
                         ISBN = "978-0812981254 ",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = 11.61
+                        Price = 11.61,
+                        PageNumber = 864
 
 
                     },
@@ -85,7 +88,8 @@ namespace OnlineBooks.Models
                         ISBN = "978-0812974492",
                         Classification = "Non-Fiction",
                         Category = "Historical",
-                        Price = 13.33
+                        Price = 13.33,
+                        PageNumber = 528
 
 
                     },
@@ -99,7 +103,8 @@ namespace OnlineBooks.Models
                         ISBN = "978-0804171281",
                         Classification = "Fiction",
                         Category = "Historical Fiction",
-                        Price = 15.95
+                        Price = 15.95,
+                        PageNumber = 288
 
                     },
                    new Book
@@ -112,7 +117,8 @@ namespace OnlineBooks.Models
                        ISBN = "978-1455586691",
                        Classification = "Non-Fiction",
                        Category = "Self-Help",
-                       Price = 14.99
+                       Price = 14.99,
+                       PageNumber = 304
                    },
                    new Book
                    {
@@ -123,7 +129,8 @@ namespace OnlineBooks.Models
                        ISBN = "978-1455523023",
                        Classification = "Non-Fiction",
                        Category = "Self-Help",
-                       Price = 21.66
+                       Price = 21.66,
+                       PageNumber = 240
                    },
                     new Book
                     {
@@ -134,7 +141,8 @@ namespace OnlineBooks.Models
                         ISBN = "978-1591847984",
                         Classification = "Non-Fiction",
                         Category = "Business",
-                        Price = 29.16
+                        Price = 29.16,
+                        PageNumber = 400
                     },
                     new Book
                     {
@@ -145,8 +153,47 @@ namespace OnlineBooks.Models
                         ISBN = "978-0553393613",
                         Classification = "Fiction",
                         Category = "Thrillers",
-                        Price = 15.03
-                    }
+                        Price = 15.03,
+                        PageNumber = 642
+                    },
+                        new Book
+                        {
+                            Title = "Oh, the Places You'll Go!",
+                            AuthorFirstName = "Dr. ",
+                            AuthorLastName = "Seuss",
+                            Publisher = "Penguin Random House LLC.",
+                            ISBN = "067-9805273121",
+                            Classification = "Fiction",
+                            Category = "Children's Literature",
+                            Price = 17.00,
+                            PageNumber = 30
+                        },
+                            new Book
+                            {
+                                Title = "The Rainbow Fish",
+                                AuthorFirstName = "Marcus ",
+                                AuthorLastName = "Pfister",
+                                Publisher = "Simon and Schuster",
+                                ISBN = "943-0523346131",
+                                Classification = "Fiction",
+                                Category = "Children's",
+                                Price = 13.00,
+                                PageNumber = 15
+                            }
+                        ,
+                                new Book
+                                {
+                                    Title = "The Very Hungry Caterpillar",
+                                    AuthorFirstName = "Eric",
+                                    AuthorLastName = "Carle",
+                                    Publisher = "World Publishing Company",
+                                    ISBN = "843-0123572912",
+                                    Classification = "Fiction",
+                                    Category = "Children's",
+                                    Price = 18.00,
+                                    PageNumber = 22
+                                }
+
             );
                 context.SaveChanges();
             }

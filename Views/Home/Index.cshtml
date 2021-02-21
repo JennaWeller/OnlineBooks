@@ -1,16 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model IQueryable<Book>
+@model BookListViewModel
 <header>
 
     <h1 class="text-center"> Welcome to the Online Book Site </h1>
-    <img src="~/lib/bootstrap/img/books.jpg" height="500" width="1100" />
+    <img src="~/img/drseuss.jpg" class="rounded-circle" width="500" />
+    <img src="~/lib/bootstrap/img/books.jpg" class=" border-secondary" height="500" width="1100" />
 </header>
+
 <!--loop through the info from the model and output it to the ptags-->
-@foreach (var x in Model)
+@foreach (var x in Model.Books)
 {
     <div>
+
         <h3> Title:  @x.Title</h3>
         <p> Author First Name: @x.AuthorFirstName</p>
         <p> Author Last Name: @x.AuthorLastName</p>
@@ -19,5 +22,7 @@
         <p> Classification: @x.Classification</p>
         <p>Category: @x.Category</p>
         <p> Price:$@x.Price</p>
+        <p> Page Number: @x.PageNumber</p>
     </div>
 }
+<div page-model="@Model.Paginginfo" page-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-dark" page-class-selected="btn-primary" class="btn-group pull-right m-1"> </div>

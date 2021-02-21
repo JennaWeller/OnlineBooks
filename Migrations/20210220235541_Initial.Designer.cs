@@ -9,7 +9,7 @@ using OnlineBooks.Models;
 namespace OnlineBooks.Migrations
 {
     [DbContext(typeof(BookDBContext))]
-    [Migration("20210218035317_Initial")]
+    [Migration("20210220235541_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,6 +46,9 @@ namespace OnlineBooks.Migrations
                     b.Property<string>("ISBN")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PageNumber")
+                        .HasColumnType("int");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
