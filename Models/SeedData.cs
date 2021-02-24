@@ -156,43 +156,42 @@ namespace OnlineBooks.Models
                         Price = 15.03,
                         PageNumber = 642
                     },
-                        new Book
-                        {
-                            Title = "Oh, the Places You'll Go!",
-                            AuthorFirstName = "Dr. ",
-                            AuthorLastName = "Seuss",
-                            Publisher = "Penguin Random House LLC.",
-                            ISBN = "067-9805273121",
-                            Classification = "Fiction",
-                            Category = "Children's Literature",
-                            Price = 17.00,
-                            PageNumber = 30
-                        },
-                            new Book
-                            {
-                                Title = "The Rainbow Fish",
-                                AuthorFirstName = "Marcus ",
-                                AuthorLastName = "Pfister",
-                                Publisher = "Simon and Schuster",
-                                ISBN = "943-0523346131",
-                                Classification = "Fiction",
-                                Category = "Children's",
-                                Price = 13.00,
-                                PageNumber = 15
-                            }
-                        ,
-                                new Book
-                                {
-                                    Title = "The Very Hungry Caterpillar",
-                                    AuthorFirstName = "Eric",
-                                    AuthorLastName = "Carle",
-                                    Publisher = "World Publishing Company",
-                                    ISBN = "843-0123572912",
-                                    Classification = "Fiction",
-                                    Category = "Children's",
-                                    Price = 18.00,
-                                    PageNumber = 22
-                                }
+                    new Book
+                    {
+                        Title = "Oh, the Places You'll Go!",
+                        AuthorFirstName = "Dr. ",
+                        AuthorLastName = "Seuss",
+                        Publisher = "Penguin Random House LLC.",
+                        ISBN = "067-9805273121",
+                        Classification = "Fiction",
+                        Category = "Children's Literature",
+                        Price = 17.00,
+                        PageNumber = 30
+                    },
+                    new Book
+                    {
+                        Title = "The Rainbow Fish",
+                        AuthorFirstName = "Marcus ",
+                        AuthorLastName = "Pfister",
+                        Publisher = "Simon and Schuster",
+                        ISBN = "943-0523346131",
+                        Classification = "Fiction",
+                        Category = "Children's",
+                        Price = 13.00,
+                        PageNumber = 15
+                    },
+                   new Book
+                   {
+                       Title = "The Very Hungry Caterpillar",
+                       AuthorFirstName = "Eric",
+                       AuthorLastName = "Carle",
+                       Publisher = "World Publishing Company",
+                       ISBN = "843-0123572912",
+                       Classification = "Fiction",
+                       Category = "Children's",
+                       Price = 18.00,
+                       PageNumber = 22
+                   }
 
             );
                 context.SaveChanges();
