@@ -12,17 +12,10 @@
 <!--loop through the info from the model and output it to the ptags-->
 @foreach (var x in Model.Books)
 {
-    <div>
-
-        <h3> Title:  @x.Title</h3>
-        <p> Author First Name: @x.AuthorFirstName</p>
-        <p> Author Last Name: @x.AuthorLastName</p>
-        <p> Publisher: @x.Publisher</p>
-        <p>ISBN: @x.ISBN</p>
-        <p> Classification: @x.Classification</p>
-        <p>Category: @x.Category</p>
-        <p> Price:$@x.Price</p>
-        <p> Page Number: @x.PageNumber</p>
-    </div>
+    <partial name="BookSummary" model="x" />
 }
-<div page-model="@Model.Paginginfo" page-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-dark" page-class-selected="btn-primary" class="btn-group pull-right m-1"> </div>
+<div page-model="@Model.Paginginfo" page-action="Index"
+     page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-dark"
+     page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory" class="btn-group pull-right m-1">
+
+</div>
