@@ -32,7 +32,7 @@ namespace OnlineBooks.Infrastructure
         public bool PageClassesEnabled
         {
             get; set;
-        }
+        } 
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
         public string PageClassSelected { get; set; }
