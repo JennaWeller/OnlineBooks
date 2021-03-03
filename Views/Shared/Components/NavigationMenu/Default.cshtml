@@ -4,6 +4,7 @@
 
 @foreach (string category in Model)
 {
+<!-- deals with the highlighting... if it is clicked it will be blue instead of the grey hover etc-->
 <a class="btn btn-block @(category == ViewBag.SelectedCategory ? "btn-primary" : "btn-outline-secondary")"
    asp-action="Index" asp-controller="Home"
    asp-route-category="@category"

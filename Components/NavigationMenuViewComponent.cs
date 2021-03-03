@@ -6,10 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnlineBooks.Components
-{
+{   //navigation under the component
     public class NavigationMenuViewComponent : ViewComponent
     {
         private IBooksRepository repository;
+        //parameters of book repository
         public NavigationMenuViewComponent(IBooksRepository r)
         {
             repository = r;
@@ -27,4 +28,3 @@ namespace OnlineBooks.Components
 
     }
 }
-//make sure this gets added

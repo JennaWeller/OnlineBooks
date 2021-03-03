@@ -156,6 +156,7 @@ namespace OnlineBooks.Models
                         Price = 15.03,
                         PageNumber = 642
                     },
+                    //3 more books of my interest
                     new Book
                     {
                         Title = "Oh, the Places You'll Go!",

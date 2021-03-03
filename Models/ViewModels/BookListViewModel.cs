@@ -9,6 +9,7 @@ namespace OnlineBooks.Models.ViewModels
     {
         public IEnumerable<Book> Books { get; set; }
         public Paginginfo Paginginfo { get; set; }
+        //this needs to be the same as the currentcategory on the other file
         public string CurrentCategory { get; set; }
     }
 }
