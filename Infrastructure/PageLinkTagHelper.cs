@@ -32,7 +32,7 @@ namespace OnlineBooks.Infrastructure
         public bool PageClassesEnabled
         {
             get; set;
-        } 
+        }
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
         public string PageClassSelected { get; set; }
@@ -44,7 +44,9 @@ namespace OnlineBooks.Infrastructure
             //more pagination with for loop 
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
+
                 TagBuilder tag = new TagBuilder("a");
+                PageUrlValues["pageNum"] = i;
                 tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
                 if (PageClassesEnabled)
                 {
