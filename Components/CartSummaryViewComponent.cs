@@ -2,6 +2,7 @@
 using OnlineBooks.Models;
 namespace OnlineBookstore.Components
 {
+    //inherits from view component
     public class CartSummaryViewComponent : ViewComponent
     {
         private Cart cart;

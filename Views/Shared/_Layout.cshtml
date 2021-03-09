@@ -13,7 +13,18 @@
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 </head>
 <body>
+    <!-- adding in the cart summary to navigation page-->
     <header>
+        <div class="bg-dark text-white p-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col navbar-brand">BOOK STORE</div>
+                    <div class="col-6 text-right">
+                        <vc:cart-summary />
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-transparent border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlineBooks</a>
@@ -38,6 +49,7 @@
     <div class="container">
         <main role="main" class="pb-3 text-center">
             <vc:navigation-menu />
+            <!--brings in the body for each of the views-->
             @RenderBody()
         </main>
     </div>

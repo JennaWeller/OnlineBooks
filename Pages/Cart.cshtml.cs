@@ -8,6 +8,7 @@ using OnlineBooks.Infrastructure;
 using OnlineBooks.Models;
 namespace OnlineBooks.Pages
 {
+    //inherits from page model
     public class CartModel : PageModel
     {
         private IBooksRepository repository;

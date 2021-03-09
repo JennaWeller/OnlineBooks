@@ -8,8 +8,9 @@
             @Model.ComputeTotalSum().ToString("c")
         </small>
     }
+    <!--this shows the summary of the cart on the navbar-->
     <a class="btn btn-sm btn-secondary navbar-btn" asp-page="/Cart"
        asp-route-returnurl="@ViewContext.HttpContext.Request.PathAndQuery()">
-        Cart
+        <i class="fa fa-shopping-cart"></i>
     </a>
 </div>

@@ -7,7 +7,7 @@ namespace OnlineBooks.Models
     public class Cart
     {
         public List<CartLine> Lines { get; set; } = new List<CartLine>();
-
+        //allows you to add items to the cart
         public virtual void AddItem(Book book, int quantity)
         {
             CartLine line = Lines.Where(b => b.Book.BookId == book.BookId).FirstOrDefault();
@@ -25,13 +25,14 @@ namespace OnlineBooks.Models
                 line.Quantity += quantity;
             }
         }
-
+        //allows you to remove items from the cart
         public virtual void RemoveLine(Book book) =>
             Lines.RemoveAll(x => x.Book.BookId == book.BookId);
 
         public virtual void Clear() => Lines.Clear();
         public decimal ComputeTotalSum() => Lines.Sum(e => 25 * e.Quantity);
 
+        // getting and setting the id of item in the cart, the book and the quantity 
 
         public class CartLine
         {

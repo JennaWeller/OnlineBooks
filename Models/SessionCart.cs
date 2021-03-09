@@ -20,17 +20,20 @@ namespace OnlineBooks.Models
         }
         [JsonIgnore]
         public ISession Session { get; set; }
+        //adding an item
         public override void AddItem(Book book, int quantity)
         {
             base.AddItem(book, quantity);
             Session.SetJson("Cart", this);
         }
+        //removing an item from cart
         public override void RemoveLine(Book book)
         {
             base.RemoveLine(book);
             Session.SetJson("Cart", this);
 
         }
+        //clearing the whole cart 
         public override void Clear()
         {
             base.Clear();

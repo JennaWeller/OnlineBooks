@@ -12,6 +12,7 @@ namespace OnlineBooks.Infrastructure
         {
             session.SetString(key, JsonSerializer.Serialize(value));
         }
+        //? for the null
 
         public static T GetJson<T>(this ISession session, string key)
         {
