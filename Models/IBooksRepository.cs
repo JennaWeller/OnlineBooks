@@ -10,5 +10,6 @@ namespace OnlineBooks.Models
     public interface IBooksRepository
     {    //IQueryable makes it able to be queried from
         IQueryable<Book> Books { get; }
+
     }
 }
